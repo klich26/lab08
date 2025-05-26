@@ -1,0 +1,43 @@
+Start testing: May 25 22:08 MSK
+----------------------------------------------------------
+1/1 Testing: all_tests
+1/1 Test: all_tests
+Command: "/klich26/workspace/projects/lab05/bankinghomework/banking/build/tests/run_tests"
+Directory: /klich26/workspace/projects/lab05/bankinghomework/banking/build/tests
+"all_tests" start time: May 25 22:08 MSK
+Output:
+----------------------------------------------------------
+Running main() from /klich26/workspace/projects/lab05/bankinghomework/banking/third-party/gtest/googletest/src/gtest_main.cc
+[==========] Running 6 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 3 tests from AccountTest
+[ RUN      ] AccountTest.BalanceChangeThrowsIfUnlocked
+[       OK ] AccountTest.BalanceChangeThrowsIfUnlocked (0 ms)
+[ RUN      ] AccountTest.LockUnlockBehavior
+[       OK ] AccountTest.LockUnlockBehavior (0 ms)
+[ RUN      ] AccountTest.ChangeBalanceCorrectly
+[       OK ] AccountTest.ChangeBalanceCorrectly (0 ms)
+[----------] 3 tests from AccountTest (0 ms total)
+
+[----------] 3 tests from TransactionTest
+[ RUN      ] TransactionTest.ThrowsOnSameAccount
+[       OK ] TransactionTest.ThrowsOnSameAccount (0 ms)
+[ RUN      ] TransactionTest.FailsIfTooSmallSum
+[       OK ] TransactionTest.FailsIfTooSmallSum (0 ms)
+[ RUN      ] TransactionTest.CreditAndDebitCalled
+[       OK ] TransactionTest.CreditAndDebitCalled (0 ms)
+[----------] 3 tests from TransactionTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 2 test suites ran. (0 ms total)
+[  PASSED  ] 6 tests.
+libgcov profiling error:/klich26/workspace/projects/lab05/bankinghomework/banking/build/tests/CMakeFiles/run_tests.dir/test_transaction.cpp.gcda:overwriting an existing profile data with a different checksum
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"all_tests" end time: May 25 22:08 MSK
+"all_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 25 22:08 MSK
