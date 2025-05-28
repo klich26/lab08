@@ -65,7 +65,7 @@ add_executable(demo ${CMAKE_CURRENT_SOURCE_DIR}/demo/main.cpp)
 
 target_link_libraries(demo print)
 
-install(TARGETS demo RUNTIME DESTINATION bin)
+install(TARGETS demo DESTINATION bin)
 
 add_compile_options(-Wno-error=maybe-uninitialized)
 
