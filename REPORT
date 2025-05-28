@@ -1,1990 +1,615 @@
-$mkdir -p cmake
-
-$ wget https://raw.githubusercontent.com/cpp-pm/gate/master/cmake/HunterGate.cmake -O cmake/HunterGate.cmake
---2025-05-26 18:03:41--  https://raw.githubusercontent.com/cpp-pm/gate/master/cmake/HunterGate.cmake
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.108.133, 185.199.111.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 17231 (17K) [text/plain]
-Saving to: ‘cmake/HunterGate.cmake’
-
-cmake/HunterGate.cm 100%[===================>]  16.83K  --.-KB/s    in 0s      
-
-2025-05-26 18:03:42 (39.2 MB/s) - ‘cmake/HunterGate.cmake’ saved [17231/17231]
-
-$ nano CMakeLists.txt
-
-
-$ cmake -H. -B_builds -DBUILD_TESTS=ON
-CMake Error: The source directory "/klich26/workspace/projects/lab07/demo" does not appear to contain CMakeLists.txt.
-Specify --help for usage, or press the help button on the CMake GUI.
-root@admin11-NMH-WDX9:/klich26/workspace/projects/lab07/demo# cd ..
-root@admin11-NMH-WDX9:/klich26/workspace/projects/lab07# cmake -H. -B_builds -DBUILD_TESTS=ON
-CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_apply_gate_settings.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_finalize.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/Hunter:34 (include)
-  cmake/HunterGate.cmake:540 (include)
-  CMakeLists.txt:4 (HunterGate)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_calculate_config_sha1.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_apply_gate_settings.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_finalize.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/Hunter:34 (include)
-  cmake/HunterGate.cmake:540 (include)
-  CMakeLists.txt:4 (HunterGate)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_lock_directory.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_calculate_config_sha1.cmake:9 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_apply_gate_settings.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_finalize.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/Hunter:34 (include)
-  cmake/HunterGate.cmake:540 (include)
-  CMakeLists.txt:4 (HunterGate)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_make_directory.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_calculate_config_sha1.cmake:10 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_apply_gate_settings.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_finalize.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/Hunter:34 (include)
-  cmake/HunterGate.cmake:540 (include)
-  CMakeLists.txt:4 (HunterGate)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_lock_directory.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_make_directory.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_calculate_config_sha1.cmake:10 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_apply_gate_settings.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_finalize.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/Hunter:34 (include)
-  cmake/HunterGate.cmake:540 (include)
-  CMakeLists.txt:4 (HunterGate)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_calculate_self.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_apply_gate_settings.cmake:9 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_finalize.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/Hunter:34 (include)
-  cmake/HunterGate.cmake:540 (include)
-  CMakeLists.txt:4 (HunterGate)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_lock_directory.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_calculate_toolchain_sha1.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_apply_gate_settings.cmake:10 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_finalize.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/Hunter:34 (include)
-  cmake/HunterGate.cmake:540 (include)
-  CMakeLists.txt:4 (HunterGate)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_make_directory.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_calculate_toolchain_sha1.cmake:6 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_apply_gate_settings.cmake:10 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_finalize.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/Hunter:34 (include)
-  cmake/HunterGate.cmake:540 (include)
-  CMakeLists.txt:4 (HunterGate)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_lock_directory.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_make_directory.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_calculate_toolchain_sha1.cmake:6 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_apply_gate_settings.cmake:10 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_finalize.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/Hunter:34 (include)
-  cmake/HunterGate.cmake:540 (include)
-  CMakeLists.txt:4 (HunterGate)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_set_config_location.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_apply_gate_settings.cmake:13 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_finalize.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/Hunter:34 (include)
-  cmake/HunterGate.cmake:540 (include)
-  CMakeLists.txt:4 (HunterGate)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_calculate_self.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_finalize.cmake:6 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/Hunter:34 (include)
-  cmake/HunterGate.cmake:540 (include)
-  CMakeLists.txt:4 (HunterGate)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_lock_directory.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_private_data.cmake:12 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/Hunter:35 (include)
-  cmake/HunterGate.cmake:540 (include)
-  CMakeLists.txt:4 (HunterGate)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_calculate_self.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_initialize.cmake:4 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/Hunter:36 (include)
-  cmake/HunterGate.cmake:540 (include)
-  CMakeLists.txt:4 (HunterGate)
-
-
--- [hunter] Calculating Toolchain-SHA1
-CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-
-
--- [hunter] Calculating Config-SHA1
--- [hunter] HUNTER_ROOT: /root/.hunter
--- [hunter] [ Hunter-ID: 23f1b5a | Toolchain-ID: c7fd7a9 | Config-ID: bf2be25 ]
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_apply_gate_settings.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_finalize.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_load_from_cache.cmake:4 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_download.cmake:22 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/projects/GTest/hunter.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:62 (include)
-  CMakeLists.txt:24 (hunter_add_package)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_calculate_config_sha1.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_apply_gate_settings.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_finalize.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_load_from_cache.cmake:4 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_download.cmake:22 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/projects/GTest/hunter.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:62 (include)
-  CMakeLists.txt:24 (hunter_add_package)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_lock_directory.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_calculate_config_sha1.cmake:9 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_apply_gate_settings.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_finalize.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_load_from_cache.cmake:4 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_download.cmake:22 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/projects/GTest/hunter.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:62 (include)
-  CMakeLists.txt:24 (hunter_add_package)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_make_directory.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_calculate_config_sha1.cmake:10 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_apply_gate_settings.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_finalize.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_load_from_cache.cmake:4 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_download.cmake:22 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/projects/GTest/hunter.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:62 (include)
-  CMakeLists.txt:24 (hunter_add_package)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_lock_directory.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_make_directory.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_calculate_config_sha1.cmake:10 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_apply_gate_settings.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_finalize.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_load_from_cache.cmake:4 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_download.cmake:22 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/projects/GTest/hunter.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:62 (include)
-  CMakeLists.txt:24 (hunter_add_package)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_calculate_self.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_apply_gate_settings.cmake:9 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_finalize.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_load_from_cache.cmake:4 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_download.cmake:22 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/projects/GTest/hunter.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:62 (include)
-  CMakeLists.txt:24 (hunter_add_package)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_lock_directory.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_calculate_toolchain_sha1.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_apply_gate_settings.cmake:10 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_finalize.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_load_from_cache.cmake:4 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_download.cmake:22 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/projects/GTest/hunter.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:62 (include)
-  CMakeLists.txt:24 (hunter_add_package)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_make_directory.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_calculate_toolchain_sha1.cmake:6 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_apply_gate_settings.cmake:10 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_finalize.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_load_from_cache.cmake:4 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_download.cmake:22 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/projects/GTest/hunter.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:62 (include)
-  CMakeLists.txt:24 (hunter_add_package)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_lock_directory.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_make_directory.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_calculate_toolchain_sha1.cmake:6 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_apply_gate_settings.cmake:10 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_finalize.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_load_from_cache.cmake:4 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_download.cmake:22 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/projects/GTest/hunter.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:62 (include)
-  CMakeLists.txt:24 (hunter_add_package)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_set_config_location.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_apply_gate_settings.cmake:13 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_finalize.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_load_from_cache.cmake:4 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_download.cmake:22 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/projects/GTest/hunter.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:62 (include)
-  CMakeLists.txt:24 (hunter_add_package)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_calculate_self.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_finalize.cmake:6 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_load_from_cache.cmake:4 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_download.cmake:22 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/projects/GTest/hunter.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:62 (include)
-  CMakeLists.txt:24 (hunter_add_package)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_apply_gate_settings.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_finalize.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_cache_run.cmake:6 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_load_from_cache.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_download.cmake:22 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/projects/GTest/hunter.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:62 (include)
-  CMakeLists.txt:24 (hunter_add_package)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_calculate_config_sha1.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_apply_gate_settings.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_finalize.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_cache_run.cmake:6 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_load_from_cache.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_download.cmake:22 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/projects/GTest/hunter.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:62 (include)
-  CMakeLists.txt:24 (hunter_add_package)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_lock_directory.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_calculate_config_sha1.cmake:9 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_apply_gate_settings.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_finalize.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_cache_run.cmake:6 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_load_from_cache.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_download.cmake:22 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/projects/GTest/hunter.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:62 (include)
-  CMakeLists.txt:24 (hunter_add_package)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_make_directory.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_calculate_config_sha1.cmake:10 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_apply_gate_settings.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_finalize.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_cache_run.cmake:6 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_load_from_cache.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_download.cmake:22 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/projects/GTest/hunter.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:62 (include)
-  CMakeLists.txt:24 (hunter_add_package)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_lock_directory.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_make_directory.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_calculate_config_sha1.cmake:10 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_apply_gate_settings.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_finalize.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_cache_run.cmake:6 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_load_from_cache.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_download.cmake:22 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/projects/GTest/hunter.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:62 (include)
-  CMakeLists.txt:24 (hunter_add_package)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_calculate_self.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_apply_gate_settings.cmake:9 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_finalize.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_cache_run.cmake:6 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_load_from_cache.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_download.cmake:22 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/projects/GTest/hunter.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:62 (include)
-  CMakeLists.txt:24 (hunter_add_package)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_lock_directory.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_calculate_toolchain_sha1.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_apply_gate_settings.cmake:10 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_finalize.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_cache_run.cmake:6 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_load_from_cache.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_download.cmake:22 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/projects/GTest/hunter.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:62 (include)
-  CMakeLists.txt:24 (hunter_add_package)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_make_directory.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_calculate_toolchain_sha1.cmake:6 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_apply_gate_settings.cmake:10 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_finalize.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_cache_run.cmake:6 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_load_from_cache.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_download.cmake:22 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/projects/GTest/hunter.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:62 (include)
-  CMakeLists.txt:24 (hunter_add_package)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_lock_directory.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_make_directory.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_calculate_toolchain_sha1.cmake:6 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_apply_gate_settings.cmake:10 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_finalize.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_cache_run.cmake:6 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_load_from_cache.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_download.cmake:22 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/projects/GTest/hunter.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:62 (include)
-  CMakeLists.txt:24 (hunter_add_package)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_set_config_location.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_apply_gate_settings.cmake:13 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_finalize.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_cache_run.cmake:6 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_load_from_cache.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_download.cmake:22 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/projects/GTest/hunter.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:62 (include)
-  CMakeLists.txt:24 (hunter_add_package)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_calculate_self.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_finalize.cmake:6 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_cache_run.cmake:6 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_load_from_cache.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_download.cmake:22 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/projects/GTest/hunter.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:62 (include)
-  CMakeLists.txt:24 (hunter_add_package)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_make_directory.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_create_cache_meta_directory.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_load_from_cache.cmake:6 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_download.cmake:22 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/projects/GTest/hunter.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:62 (include)
-  CMakeLists.txt:24 (hunter_add_package)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_lock_directory.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_make_directory.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_create_cache_meta_directory.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_load_from_cache.cmake:6 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_download.cmake:22 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/projects/GTest/hunter.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:62 (include)
-  CMakeLists.txt:24 (hunter_add_package)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_make_directory.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_create_cache_meta_directory.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_save_to_cache.cmake:4 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_download.cmake:26 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/projects/GTest/hunter.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:62 (include)
-  CMakeLists.txt:24 (hunter_add_package)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_lock_directory.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_make_directory.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_create_cache_meta_directory.cmake:5 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_save_to_cache.cmake:4 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_download.cmake:26 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/projects/GTest/hunter.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:62 (include)
-  CMakeLists.txt:24 (hunter_add_package)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_lock_directory.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_save_to_cache.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_download.cmake:26 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/projects/GTest/hunter.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:62 (include)
-  CMakeLists.txt:24 (hunter_add_package)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_make_directory.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_save_to_cache.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_download.cmake:26 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/projects/GTest/hunter.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:62 (include)
-  CMakeLists.txt:24 (hunter_add_package)
-
-
-CMake Deprecation Warning at /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_lock_directory.cmake:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-Call Stack (most recent call first):
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_make_directory.cmake:7 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_save_to_cache.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_download.cmake:26 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/projects/GTest/hunter.cmake:8 (include)
-  /root/.hunter/_Base/Download/Hunter/0.23.308/23f1b5a/Unpacked/cmake/modules/hunter_add_package.cmake:62 (include)
-  CMakeLists.txt:24 (hunter_add_package)
-
-
--- [hunter] GTEST_ROOT: /root/.hunter/_Base/23f1b5a/c7fd7a9/bf2be25/Install (ver.: 1.11.0)
--- Configuring done (2.3s)
--- Generating done (0.0s)
--- Build files have been written to: /klich26/workspace/projects/lab07/_builds
-
-
-
-
-$cmake --build _builds
-[ 16%] Building CXX object CMakeFiles/print.dir/sources/print.cpp.o
-[ 33%] Linking CXX static library libprint.a
-[ 33%] Built target print
-[ 50%] Building CXX object CMakeFiles/check.dir/tests/test1.cpp.o
-[ 66%] Linking CXX executable check
-[ 66%] Built target check
-[ 83%] Building CXX object CMakeFiles/demo.dir/demo/main.cpp.o
-[100%] Linking CXX executable demo
-[100%] Built target demo
-
-
-
-
-$cmake --build _builds --target test
-Running tests...
-Test project /klich26/workspace/projects/lab07/_builds
-    Start 1: check
-1/1 Test #1: check ............................   Passed    0.01 sec
-
-100% tests passed, 0 tests failed out of 1
-
-Total Test time (real) =   0.01 sec
-
-
-
-$ls -la $HOME/.hunter/
-total 12
-drwxr-xr-x 3 root root 4096 May 26 17:44 .
-drwx------ 9 root root 4096 May 26 17:44 ..
-drwxr-xr-x 6 root root 4096 May 26 17:44 _Base
-
-
-
-$git clone https://github.com/cpp-pm/hunter $HOME/projects/hunter
-Cloning into '/root/projects/hunter'...
-remote: Enumerating objects: 54458, done.
-remote: Counting objects: 100% (9/9), done.
-remote: Compressing objects: 100% (9/9), done.
-remote: Total 54458 (delta 0), reused 0 (delta 0), pack-reused 54449 (from 2)
-Receiving objects: 100% (54458/54458), 14.00 MiB | 1.85 MiB/s, done.
-Resolving deltas: 100% (34076/34076), done.
-
-
-
-
-$ export HUNTER_ROOT=$HOME/projects/hunter
-$ rm -rf _builds
-
-
-$ cmake -H. -B_builds -DBUILD_TESTS=ON
-CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-
-
--- The C compiler identification is GNU 13.2.0
--- The CXX compiler identification is GNU 13.2.0
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: /usr/bin/cc - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /usr/bin/c++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- [hunter] Calculating Toolchain-SHA1
--- [hunter] Calculating Config-SHA1
--- [hunter] HUNTER_ROOT: /root/projects/hunter
--- [hunter] [ Hunter-ID: xxxxxxx | Toolchain-ID: c7fd7a9 | Config-ID: cf272be ]
--- [hunter] GTEST_ROOT: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Install (ver.: 1.15.2)
--- [hunter] Building GTest
-loading initial cache file /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/cache.cmake
-loading initial cache file /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/args.cmake
--- The C compiler identification is GNU 13.2.0
--- The CXX compiler identification is GNU 13.2.0
--- Check for working C compiler: /usr/bin/cc - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Check for working CXX compiler: /usr/bin/c++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Configuring done (0.4s)
--- Generating done (0.0s)
--- Build files have been written to: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Build
-[  6%] Creating directories for 'GTest-Release'
-[ 12%] Performing download step (download, verify and extract) for 'GTest-Release'
--- Downloading...
-   dst='/root/projects/hunter/_Base/Download/GTest/1.15.2/568d58e/v1.15.2.tar.gz'
-   timeout='none'
-   inactivity timeout='none'
--- Using src='https://github.com/google/googletest/archive/v1.15.2.tar.gz'
--- [download 1% complete]
--- [download 2% complete]
--- [download 5% complete]
--- [download 7% complete]
--- [download 10% complete]
--- [download 11% complete]
--- [download 12% complete]
--- [download 13% complete]
--- [download 14% complete]
--- [download 15% complete]
--- [download 16% complete]
--- [download 18% complete]
--- [download 19% complete]
--- [download 20% complete]
--- [download 21% complete]
--- [download 23% complete]
--- [download 24% complete]
--- [download 26% complete]
--- [download 27% complete]
--- [download 30% complete]
--- [download 31% complete]
--- [download 33% complete]
--- [download 34% complete]
--- [download 35% complete]
--- [download 36% complete]
--- [download 38% complete]
--- [download 39% complete]
--- [download 40% complete]
--- [download 42% complete]
--- [download 46% complete]
--- [download 47% complete]
--- [download 49% complete]
--- [download 50% complete]
--- [download 51% complete]
--- [download 53% complete]
--- [download 54% complete]
--- [download 55% complete]
--- [download 56% complete]
--- [download 58% complete]
--- [download 59% complete]
--- [download 60% complete]
--- [download 61% complete]
--- [download 63% complete]
--- [download 64% complete]
--- [download 66% complete]
--- [download 68% complete]
--- [download 69% complete]
--- [download 70% complete]
--- [download 72% complete]
--- [download 73% complete]
--- [download 74% complete]
--- [download 75% complete]
--- [download 77% complete]
--- [download 78% complete]
--- [download 79% complete]
--- [download 81% complete]
--- [download 82% complete]
--- [download 83% complete]
--- [download 84% complete]
--- [download 86% complete]
--- [download 87% complete]
--- [download 88% complete]
--- [download 90% complete]
--- [download 91% complete]
--- [download 93% complete]
--- [download 95% complete]
--- [download 97% complete]
--- [download 99% complete]
--- [download 100% complete]
--- verifying file...
-       file='/root/projects/hunter/_Base/Download/GTest/1.15.2/568d58e/v1.15.2.tar.gz'
--- Downloading... done
--- extracting...
-     src='/root/projects/hunter/_Base/Download/GTest/1.15.2/568d58e/v1.15.2.tar.gz'
-     dst='/root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Source'
--- extracting... [tar xfz]
--- extracting... [analysis]
--- extracting... [rename]
--- extracting... [clean up]
--- extracting... done
-[ 18%] No update step for 'GTest-Release'
-[ 25%] No patch step for 'GTest-Release'
-[ 31%] Performing configure step for 'GTest-Release'
-loading initial cache file /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/cache.cmake
-loading initial cache file /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/args.cmake
--- The C compiler identification is GNU 13.2.0
--- The CXX compiler identification is GNU 13.2.0
--- Check for working C compiler: /usr/bin/cc - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Check for working CXX compiler: /usr/bin/c++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
--- Found Threads: TRUE  
--- Configuring done (0.6s)
--- Generating done (0.0s)
--- Build files have been written to: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build
-[ 37%] Performing build step for 'GTest-Release'
-[ 12%] Building CXX object googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
-[ 25%] Linking CXX static library ../lib/libgtest.a
-[ 25%] Built target gtest
-[ 50%] Building CXX object googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
-[ 50%] Building CXX object googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
-[ 62%] Linking CXX static library ../lib/libgtest_main.a
-[ 62%] Built target gtest_main
-[ 75%] Linking CXX static library ../lib/libgmock.a
-[ 75%] Built target gmock
-[ 87%] Building CXX object googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
-[100%] Linking CXX static library ../lib/libgmock_main.a
-[100%] Built target gmock_main
-[ 43%] Performing install step for 'GTest-Release'
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/gmock-spec-builders.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/internal
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/internal/gmock-internal-utils.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/internal/gmock-pp.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/internal/gmock-port.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/internal/custom
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/internal/custom/gmock-generated-actions.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/internal/custom/gmock-matchers.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/internal/custom/README.md
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/internal/custom/gmock-port.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/gmock-actions.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/gmock-more-matchers.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/gmock-cardinalities.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/gmock-matchers.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/gmock-nice-strict.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/gmock-function-mocker.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/gmock-more-actions.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/gmock.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/lib/libgmock.a
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/lib/libgmock_main.a
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/lib/pkgconfig/gmock.pc
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/lib/pkgconfig/gmock_main.pc
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/lib/cmake/GTest/GTestTargets.cmake
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/lib/cmake/GTest/GTestTargets-release.cmake
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/lib/cmake/GTest/GTestConfigVersion.cmake
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/lib/cmake/GTest/GTestConfig.cmake
--- Up-to-date: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/gtest-spi.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/gtest.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/internal
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/internal/gtest-port.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/internal/gtest-death-test-internal.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/internal/gtest-string.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/internal/gtest-port-arch.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/internal/gtest-filepath.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/internal/gtest-internal.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/internal/gtest-param-util.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/internal/gtest-type-util.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/internal/custom
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/internal/custom/gtest.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/internal/custom/gtest-port.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/internal/custom/gtest-printers.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/internal/custom/README.md
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/gtest-test-part.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/gtest-typed-test.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/gtest-printers.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/gtest-matchers.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/gtest_pred_impl.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/gtest-message.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/gtest_prod.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/gtest-death-test.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/gtest-assertion-result.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/gtest-param-test.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/lib/libgtest.a
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/lib/libgtest_main.a
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/lib/pkgconfig/gtest.pc
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/lib/pkgconfig/gtest_main.pc
-loading initial cache file /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/args.cmake
-[ 50%] Completed 'GTest-Release'
-[ 50%] Built target GTest-Release
-[ 56%] Creating directories for 'GTest-Debug'
-[ 62%] Performing download step (download, verify and extract) for 'GTest-Debug'
--- verifying file...
-       file='/root/projects/hunter/_Base/Download/GTest/1.15.2/568d58e/v1.15.2.tar.gz'
--- File already exists and hash match (skip download):
-  file='/root/projects/hunter/_Base/Download/GTest/1.15.2/568d58e/v1.15.2.tar.gz'
-  SHA1='568d58e26bd4e838449ca7ab8ebc152b3cbd210d'
--- extracting...
-     src='/root/projects/hunter/_Base/Download/GTest/1.15.2/568d58e/v1.15.2.tar.gz'
-     dst='/root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Source'
--- extracting... [tar xfz]
--- extracting... [analysis]
--- extracting... [rename]
--- extracting... [clean up]
--- extracting... done
-[ 68%] No update step for 'GTest-Debug'
-[ 75%] No patch step for 'GTest-Debug'
-[ 81%] Performing configure step for 'GTest-Debug'
-loading initial cache file /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/cache.cmake
-loading initial cache file /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/args.cmake
--- The C compiler identification is GNU 13.2.0
--- The CXX compiler identification is GNU 13.2.0
--- Check for working C compiler: /usr/bin/cc - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Check for working CXX compiler: /usr/bin/c++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
--- Found Threads: TRUE  
--- Configuring done (0.3s)
--- Generating done (0.0s)
--- Build files have been written to: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build
-[ 87%] Performing build step for 'GTest-Debug'
-[ 12%] Building CXX object googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
-[ 25%] Linking CXX static library ../lib/libgtestd.a
-[ 25%] Built target gtest
-[ 37%] Building CXX object googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
-[ 50%] Building CXX object googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
-[ 62%] Linking CXX static library ../lib/libgtest_maind.a
-[ 62%] Built target gtest_main
-[ 75%] Linking CXX static library ../lib/libgmockd.a
-[ 75%] Built target gmock
-[ 87%] Building CXX object googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
-[100%] Linking CXX static library ../lib/libgmock_maind.a
-[100%] Built target gmock_main
-[ 93%] Performing install step for 'GTest-Debug'
--- Up-to-date: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include
--- Up-to-date: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/gmock-spec-builders.h
--- Up-to-date: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/internal
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/internal/gmock-internal-utils.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/internal/gmock-pp.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/internal/gmock-port.h
--- Up-to-date: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/internal/custom
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/internal/custom/gmock-generated-actions.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/internal/custom/gmock-matchers.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/internal/custom/README.md
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/internal/custom/gmock-port.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/gmock-actions.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/gmock-more-matchers.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/gmock-cardinalities.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/gmock-matchers.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/gmock-nice-strict.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/gmock-function-mocker.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/gmock-more-actions.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gmock/gmock.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/lib/libgmockd.a
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/lib/libgmock_maind.a
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/lib/pkgconfig/gmock.pc
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/lib/pkgconfig/gmock_main.pc
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/lib/cmake/GTest/GTestTargets.cmake
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/lib/cmake/GTest/GTestTargets-debug.cmake
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/lib/cmake/GTest/GTestConfigVersion.cmake
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/lib/cmake/GTest/GTestConfig.cmake
--- Up-to-date: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include
--- Up-to-date: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/gtest-spi.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/gtest.h
--- Up-to-date: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/internal
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/internal/gtest-port.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/internal/gtest-death-test-internal.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/internal/gtest-string.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/internal/gtest-port-arch.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/internal/gtest-filepath.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/internal/gtest-internal.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/internal/gtest-param-util.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/internal/gtest-type-util.h
--- Up-to-date: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/internal/custom
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/internal/custom/gtest.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/internal/custom/gtest-port.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/internal/custom/gtest-printers.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/internal/custom/README.md
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/gtest-test-part.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/gtest-typed-test.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/gtest-printers.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/gtest-matchers.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/gtest_pred_impl.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/gtest-message.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/gtest_prod.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/gtest-death-test.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/gtest-assertion-result.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/include/gtest/gtest-param-test.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/lib/libgtestd.a
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/lib/libgtest_maind.a
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/lib/pkgconfig/gtest.pc
--- Installing: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/Install/lib/pkgconfig/gtest_main.pc
-loading initial cache file /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest/args.cmake
-[100%] Completed 'GTest-Debug'
-[100%] Built target GTest-Debug
--- [hunter] Build step successful (dir: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Build/GTest)
--- [hunter] Cache saved: /root/projects/hunter/_Base/Cache/raw/b1aa0aeade6286c4d7f2096c4f5dce20cf10d714.tar.bz2
--- Found GTest: /root/projects/hunter/_Base/xxxxxxx/c7fd7a9/cf272be/Install/lib/cmake/GTest/GTestConfig.cmake (found version "1.15.2")  
--- Configuring done (33.1s)
--- Generating done (0.0s)
--- Build files have been written to: /klich26/workspace/projects/lab07/_builds
-
-
-
-
-$cmake --build _builds
-[ 16%] Building CXX object CMakeFiles/print.dir/sources/print.cpp.o
-[ 33%] Linking CXX static library libprint.a
-[ 33%] Built target print
-[ 50%] Building CXX object CMakeFiles/check.dir/tests/test1.cpp.o
-[ 66%] Linking CXX executable check
-[ 66%] Built target check
-[ 83%] Building CXX object CMakeFiles/demo.dir/demo/main.cpp.o
-[100%] Linking CXX executable demo
-[100%] Built target demo
-
-
-
-
-$cmake --build _builds --target test
-Running tests...
-Test project /klich26/workspace/projects/lab07/_builds
-    Start 1: check
-1/1 Test #1: check ............................   Passed    0.01 sec
-
-100% tests passed, 0 tests failed out of 1
-
-Total Test time (real) =   0.01 sec
-
-
-$ cat $HUNTER_ROOT/cmake/configs/default.cmake | grep GTest
-  hunter_default_version(GTest VERSION 1.7.0-hunter-6)
-  hunter_default_version(GTest VERSION 1.15.2)
-
-$ cat $HUNTER_ROOT/cmake/projects/GTest/hunter.cmake
-# Copyright (c) 2013, Ruslan Baratov
-# All rights reserved.
-
-# !!! DO NOT PLACE HEADER GUARDS HERE !!!
-
-include(hunter_add_version)
-include(hunter_cacheable)
-include(hunter_download)
-include(hunter_pick_scheme)
-include(hunter_cmake_args)
-
-hunter_add_version(
-    PACKAGE_NAME
-    GTest
-    VERSION
-    "1.7.0-hunter"
-    URL
-    "https://github.com/hunter-packages/gtest/archive/v1.7.0-hunter.tar.gz"
-    SHA1
-    1ed1c26d11fb592056c1cb912bd3c784afa96eaa
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    GTest
-    VERSION
-    "1.7.0-hunter-1"
-    URL
-    "https://github.com/hunter-packages/gtest/archive/v1.7.0-hunter-1.tar.gz"
-    SHA1
-    0cb1dcf75e144ad052d3f1e4923a7773bf9b494f
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    GTest
-    VERSION
-    "1.7.0-hunter-2"
-    URL
-    "https://github.com/hunter-packages/gtest/archive/v1.7.0-hunter-2.tar.gz"
-    SHA1
-    e62b2ef70308f63c32c560f7b6e252442eed4d57
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    GTest
-    VERSION
-    "1.7.0-hunter-3"
-    URL
-    "https://github.com/hunter-packages/gtest/archive/v1.7.0-hunter-3.tar.gz"
-    SHA1
-    fea7d3020e20f059255484c69755753ccadf6362
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    GTest
-    VERSION
-    "1.7.0-hunter-4"
-    URL
-    "https://github.com/hunter-packages/gtest/archive/v1.7.0-hunter-4.tar.gz"
-    SHA1
-    9b439c0c25437a083957b197ac6905662a5d901b
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    GTest
-    VERSION
-    "1.7.0-hunter-5"
-    URL
-    "https://github.com/hunter-packages/gtest/archive/v1.7.0-hunter-5.tar.gz"
-    SHA1
-    796804df3facb074087a4d8ba6f652e5ac69ad7f
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    GTest
-    VERSION
-    "1.7.0-hunter-6"
-    URL
-    "https://github.com/hunter-packages/gtest/archive/v1.7.0-hunter-6.tar.gz"
-    SHA1
-    64b93147abe287da8fe4e18cfd54ba9297dafb82
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    GTest
-    VERSION
-    "1.7.0-hunter-7"
-    URL
-    "https://github.com/hunter-packages/gtest/archive/v1.7.0-hunter-7.tar.gz"
-    SHA1
-    19b5c98747768bcd0622714f2ed40f17aee406b2
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    GTest
-    VERSION
-    "1.7.0-hunter-8"
-    URL
-    "https://github.com/hunter-packages/gtest/archive/v1.7.0-hunter-8.tar.gz"
-    SHA1
-    ac4d2215aa1b1d745a096e5e3b2dbe0c0f229ea5
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    GTest
-    VERSION
-    "1.7.0-hunter-9"
-    URL
-    "https://github.com/hunter-packages/gtest/archive/v1.7.0-hunter-9.tar.gz"
-    SHA1
-    8a47fe9c4e550f4ed0e2c05388dd291a059223d9
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    GTest
-    VERSION
-    "1.7.0-hunter-10"
-    URL
-    "https://github.com/hunter-packages/gtest/archive/v1.7.0-hunter-10.tar.gz"
-    SHA1
-    374e6dbe8619ab467c6b1a0b470a598407b172e9
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    GTest
-    VERSION
-    "1.7.0-hunter-11"
-    URL
-    "https://github.com/hunter-packages/gtest/archive/v1.7.0-hunter-11.tar.gz"
-    SHA1
-    c6ae948ca2bea1d734af01b1069491b00933ed31
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    GTest
-    VERSION
-    1.8.0-hunter-p2
-    URL
-    "https://github.com/hunter-packages/googletest/archive/1.8.0-hunter-p2.tar.gz"
-    SHA1
-    93148cb8850abe78b76ed87158fdb6b9c48e38c4
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    GTest
-    VERSION
-    1.8.0-hunter-p5
-    URL https://github.com/hunter-packages/googletest/archive/1.8.0-hunter-p5.tar.gz
-    SHA1 3325aa4fc8b30e665c9f73a60f19387b7db36f85
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    GTest
-    VERSION
-    1.8.0-hunter-p6
-    URL
-    "https://github.com/hunter-packages/googletest/archive/1.8.0-hunter-p6.tar.gz"
-    SHA1
-    f57096bd01c6f8cbef043b312d4d1e82f29648b6
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    GTest
-    VERSION
-    1.8.0-hunter-p7
-    URL
-    "https://github.com/hunter-packages/googletest/archive/1.8.0-hunter-p7.tar.gz"
-    SHA1
-    4fe083a96d7597f7dce6f453dca01e1d94a1e45b
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    GTest
-    VERSION
-    1.8.0-hunter-p8
-    URL
-    "https://github.com/hunter-packages/googletest/archive/1.8.0-hunter-p8.tar.gz"
-    SHA1
-    1cdd396b20c8d29f7ea08baaa49673b1c261f545
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    GTest
-    VERSION
-    1.8.0-hunter-p9
-    URL
-    "https://github.com/hunter-packages/googletest/archive/1.8.0-hunter-p9.tar.gz"
-    SHA1
-    a345f16cb610e0b5dfa7778dc2852b784cfede5b
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    GTest
-    VERSION
-    1.8.0-hunter-p10
-    URL
-    "https://github.com/hunter-packages/googletest/archive/1.8.0-hunter-p10.tar.gz"
-    SHA1
-    1d92c9f51af756410843b13f8c4e4df09e235394
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    GTest
-    VERSION
-    "1.8.0-hunter-p11"
-    URL
-    "https://github.com/hunter-packages/googletest/archive/1.8.0-hunter-p11.tar.gz"
-    SHA1
-    76c6aec038f7d7258bf5c4f45c4817b34039d285
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    GTest
-    VERSION
-    "1.8.1"
-    URL
-    "https://github.com/google/googletest/archive/release-1.8.1.tar.gz"
-    SHA1
-    152b849610d91a9dfa1401293f43230c2e0c33f8
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    GTest
-    VERSION
-    "1.10.0"
-    URL
-    "https://github.com/google/googletest/archive/release-1.10.0.tar.gz"
-    SHA1
-    9c89be7df9c5e8cb0bc20b3c4b39bf7e82686770
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    GTest
-    VERSION
-    "1.10.0-p0"
-    URL
-    "https://github.com/hunter-packages/googletest/archive/v1.10.0-p0.tar.gz"
-    SHA1
-    f7c72be12120e018f53cda0e0daa26fab5da7dfc
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    GTest
-    VERSION
-    "1.10.0-p1"
-    URL
-    "https://github.com/hunter-packages/googletest/archive/v1.10.0-p1.tar.gz"
-    SHA1
-    06a1f667f200ff94d38b608e44c3c8061c7b8f2f
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    GTest
-    VERSION
-    "1.11.0"
-    URL
-    "https://github.com/google/googletest/archive/release-1.11.0.tar.gz"
-    SHA1
-    7b100bb68db8df1060e178c495f3cbe941c9b058
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    GTest
-    VERSION
-    "1.12.1"
-    URL
-    "https://github.com/google/googletest/archive/release-1.12.1.tar.gz"
-    SHA1
-    cdddd449d4e3aa7bd421d4519c17139ea1890fe7
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    GTest
-    VERSION
-    "1.13.0"
-    URL
-    "https://github.com/google/googletest/archive/v1.13.0.tar.gz"
-    SHA1
-    bfa4b5131b6eaac06962c251742c96aab3f7aa78
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    GTest
-    VERSION
-    "1.14.0"
-    URL
-    "https://github.com/google/googletest/archive/v1.14.0.tar.gz"
-    SHA1
-    2b28c2a3a30d86b1759543ef61fac3c4d69f8c4c
-)
-
-hunter_add_version(
-        PACKAGE_NAME
-        GTest
-        VERSION
-        "1.15.2"
-        URL
-        "https://github.com/google/googletest/archive/v1.15.2.tar.gz"
-        SHA1
-        568d58e26bd4e838449ca7ab8ebc152b3cbd210d
-)
-
-
-if(HUNTER_GTest_VERSION VERSION_LESS 1.8.0 OR HUNTER_GTest_VERSION VERSION_GREATER_EQUAL 1.11.0)
-  set(_gtest_license "LICENSE")
-else()
-  set(_gtest_license "googletest/LICENSE")
-endif()
-
-# gtest_force_shared_crt prevents GoogleTest from modifying options
-# rather than forcing it to use shared libraries
-hunter_cmake_args(
-    GTest
-    CMAKE_ARGS
-    HUNTER_INSTALL_LICENSE_FILES=${_gtest_license}
-    gtest_force_shared_crt=TRUE
-)
-
-hunter_pick_scheme(DEFAULT url_sha1_cmake)
-hunter_cacheable(GTest)
-hunter_download(PACKAGE_NAME GTest PACKAGE_INTERNAL_DEPS_ID 1)
-
-$ mkdir demo
-$ cat > demo/main.cpp <<EOF
-#include <print.hpp>
-
-#include <cstdlib>
-
-int main(int argc, char* argv[])
-{
-  const char* log_path = std::getenv("LOG_PATH");
-  if (log_path == nullptr)
-  {
-    std::cerr << "undefined environment variable: LOG_PATH" << std::endl;
-    return 1;
-  }
-  std::string text;
-  while (std::cin >> text)
-  {
-    std::ofstream out{log_path, std::ios_base::app};
-    print(text, out);
-    out << std::endl;
-  }
-}
-EOF
-
-
-
-$ sed -i '/endif()/a\
-
-add_executable(demo ${CMAKE_CURRENT_SOURCE_DIR}/demo/main.cpp)
-target_link_libraries(demo print)
-install(TARGETS demo RUNTIME DESTINATION bin)
-' CMakeLists.txt
-sed: -e expression #1, char 105
-
-$ mkdir tools
-
-
-$git submodule add https://github.com/ruslo/polly tools/polly
-Cloning into '/klich26/workspace/projects/lab07/tools/polly'...
-remote: Enumerating objects: 6578, done.
-remote: Counting objects: 100% (32/32), done.
-remote: Compressing objects: 100% (15/15), done.
-remote: Total 6578 (delta 21), reused 20 (delta 17), pack-reused 6546 (from 1)
-Receiving objects: 100% (6578/6578), 1.68 MiB | 4.46 MiB/s, done.
-Resolving deltas: 100% (4551/4551), done.
-
-
-$ tools/polly/bin/polly.py --test
-Python version: 3.12
-Build dir: /klich26/workspace/projects/lab07/_builds/default
-Execute command: [
-  `which`
-  `cmake`
+$ git clone https://github.com/${GITHUB_USERNAME}/lab07 lab08
+$ cd lab08
+$ git submodule update --init
+$ git remote remove origin
+$ git remote add origin https://github.com/${GITHUB_USERNAME}/lab08
+
+
+$nano Dockerfile
+
+$docker build -t logger
+
+$ docker build -t logger .
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  52.91MB
+Step 1/9 : FROM ubuntu:18.04
+18.04: Pulling from library/ubuntu
+7c457f213c76: Pull complete 
+Digest: sha256:152dc042452c496007f07ca9127571cb9c29697f42acbfad72324b2bb2e43c98
+Status: Downloaded newer image for ubuntu:18.04
+ ---> f9a80a55f492
+Step 2/9 : RUN apt update
+ ---> Running in b79ab6cba24c
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Get:1 http://security.ubuntu.com/ubuntu bionic-security InRelease [102 kB]
+Get:2 http://archive.ubuntu.com/ubuntu bionic InRelease [242 kB]
+Get:3 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 Packages [1637 kB]
+Get:4 http://archive.ubuntu.com/ubuntu bionic-updates InRelease [102 kB]
+Get:5 http://security.ubuntu.com/ubuntu bionic-security/restricted amd64 Packages [1688 kB]
+Get:6 http://security.ubuntu.com/ubuntu bionic-security/multiverse amd64 Packages [23.8 kB]
+Get:7 http://security.ubuntu.com/ubuntu bionic-security/main amd64 Packages [3373 kB]
+Get:8 http://archive.ubuntu.com/ubuntu bionic-backports InRelease [102 kB]
+Get:9 http://archive.ubuntu.com/ubuntu bionic/main amd64 Packages [1344 kB]
+Get:10 http://archive.ubuntu.com/ubuntu bionic/universe amd64 Packages [11.3 MB]
+Get:11 http://archive.ubuntu.com/ubuntu bionic/restricted amd64 Packages [13.5 kB]
+Get:12 http://archive.ubuntu.com/ubuntu bionic/multiverse amd64 Packages [186 kB]
+Get:13 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages [3786 kB]
+Get:14 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages [2411 kB]
+Get:15 http://archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 Packages [30.8 kB]
+Get:16 http://archive.ubuntu.com/ubuntu bionic-updates/restricted amd64 Packages [1728 kB]
+Get:17 http://archive.ubuntu.com/ubuntu bionic-backports/main amd64 Packages [64.0 kB]
+Get:18 http://archive.ubuntu.com/ubuntu bionic-backports/universe amd64 Packages [20.6 kB]
+Fetched 28.2 MB in 6s (4698 kB/s)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+1 package can be upgraded. Run 'apt list --upgradable' to see it.
+ ---> Removed intermediate container b79ab6cba24c
+ ---> 5e9241adaa23
+Step 3/9 : RUN apt install -yy gcc g++ cmake
+ ---> Running in 05e0fa4abf52
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  binutils binutils-common binutils-x86-64-linux-gnu ca-certificates
+  cmake-data cpp cpp-7 g++-7 gcc-7 gcc-7-base krb5-locales libarchive13
+  libasan4 libasn1-8-heimdal libatomic1 libbinutils libc-dev-bin libc6-dev
+  libcc1-0 libcilkrts5 libcurl4 libexpat1 libgcc-7-dev libgomp1
+  libgssapi-krb5-2 libgssapi3-heimdal libhcrypto4-heimdal libheimbase1-heimdal
+  libheimntlm0-heimdal libhx509-5-heimdal libicu60 libisl19 libitm1
+  libjsoncpp1 libk5crypto3 libkeyutils1 libkrb5-26-heimdal libkrb5-3
+  libkrb5support0 libldap-2.4-2 libldap-common liblsan0 liblzo2-2 libmpc3
+  libmpfr6 libmpx2 libnghttp2-14 libpsl5 libquadmath0 librhash0
+  libroken18-heimdal librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db
+  libsqlite3-0 libssl1.1 libstdc++-7-dev libtsan0 libubsan0 libuv1
+  libwind0-heimdal libxml2 linux-libc-dev make manpages manpages-dev
+  multiarch-support openssl publicsuffix
+Suggested packages:
+  binutils-doc cmake-doc ninja-build cpp-doc gcc-7-locales g++-multilib
+  g++-7-multilib gcc-7-doc libstdc++6-7-dbg gcc-multilib autoconf automake
+  libtool flex bison gdb gcc-doc gcc-7-multilib libgcc1-dbg libgomp1-dbg
+  libitm1-dbg libatomic1-dbg libasan4-dbg liblsan0-dbg libtsan0-dbg
+  libubsan0-dbg libcilkrts5-dbg libmpx2-dbg libquadmath0-dbg lrzip glibc-doc
+  krb5-doc krb5-user libsasl2-modules-gssapi-mit
+  | libsasl2-modules-gssapi-heimdal libsasl2-modules-ldap libsasl2-modules-otp
+  libsasl2-modules-sql libstdc++-7-doc make-doc man-browser
+The following NEW packages will be installed:
+  binutils binutils-common binutils-x86-64-linux-gnu ca-certificates cmake
+  cmake-data cpp cpp-7 g++ g++-7 gcc gcc-7 gcc-7-base krb5-locales
+  libarchive13 libasan4 libasn1-8-heimdal libatomic1 libbinutils libc-dev-bin
+  libc6-dev libcc1-0 libcilkrts5 libcurl4 libexpat1 libgcc-7-dev libgomp1
+  libgssapi-krb5-2 libgssapi3-heimdal libhcrypto4-heimdal libheimbase1-heimdal
+  libheimntlm0-heimdal libhx509-5-heimdal libicu60 libisl19 libitm1
+  libjsoncpp1 libk5crypto3 libkeyutils1 libkrb5-26-heimdal libkrb5-3
+  libkrb5support0 libldap-2.4-2 libldap-common liblsan0 liblzo2-2 libmpc3
+  libmpfr6 libmpx2 libnghttp2-14 libpsl5 libquadmath0 librhash0
+  libroken18-heimdal librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db
+  libsqlite3-0 libssl1.1 libstdc++-7-dev libtsan0 libubsan0 libuv1
+  libwind0-heimdal libxml2 linux-libc-dev make manpages manpages-dev
+  multiarch-support openssl publicsuffix
+0 upgraded, 73 newly installed, 0 to remove and 1 not upgraded.
+Need to get 62.0 MB of archives.
+After this operation, 238 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 multiarch-support amd64 2.27-3ubuntu1.6 [6960 B]
+Get:2 http://archive.ubuntu.com/ubuntu bionic/main amd64 liblzo2-2 amd64 2.08-1.2 [48.7 kB]
+Get:3 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libssl1.1 amd64 1.1.1-1ubuntu2.1~18.04.23 [1303 kB]
+Get:4 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 openssl amd64 1.1.1-1ubuntu2.1~18.04.23 [614 kB]
+Get:5 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 ca-certificates all 20230311ubuntu0.18.04.1 [151 kB]
+Get:6 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libexpat1 amd64 2.2.5-3ubuntu0.9 [82.8 kB]
+Get:7 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libicu60 amd64 60.2-3ubuntu3.2 [8050 kB]
+Get:8 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libsqlite3-0 amd64 3.22.0-1ubuntu0.7 [499 kB]
+Get:9 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libxml2 amd64 2.9.4+dfsg1-6.1ubuntu1.9 [663 kB]
+Get:10 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 krb5-locales all 1.16-2ubuntu0.4 [13.4 kB]
+Get:11 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libkrb5support0 amd64 1.16-2ubuntu0.4 [30.9 kB]
+Get:12 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libk5crypto3 amd64 1.16-2ubuntu0.4 [85.3 kB]
+Get:13 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libkeyutils1 amd64 1.5.9-9.2ubuntu2.1 [8764 B]
+Get:14 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libkrb5-3 amd64 1.16-2ubuntu0.4 [278 kB]
+Get:15 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libgssapi-krb5-2 amd64 1.16-2ubuntu0.4 [122 kB]
+Get:16 http://archive.ubuntu.com/ubuntu bionic/main amd64 libpsl5 amd64 0.19.1-5build1 [41.8 kB]
+Get:17 http://archive.ubuntu.com/ubuntu bionic/main amd64 manpages all 4.15-1 [1234 kB]
+Get:18 http://archive.ubuntu.com/ubuntu bionic/main amd64 publicsuffix all 20180223.1310-1 [97.6 kB]
+Get:19 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 binutils-common amd64 2.30-21ubuntu1~18.04.9 [197 kB]
+Get:20 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libbinutils amd64 2.30-21ubuntu1~18.04.9 [489 kB]
+Get:21 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 binutils-x86-64-linux-gnu amd64 2.30-21ubuntu1~18.04.9 [1839 kB]
+Get:22 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 binutils amd64 2.30-21ubuntu1~18.04.9 [3392 B]
+Get:23 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 cmake-data all 3.10.2-1ubuntu2.18.04.2 [1332 kB]
+Get:24 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libarchive13 amd64 3.2.2-3.1ubuntu0.7 [288 kB]
+Get:25 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libroken18-heimdal amd64 7.5.0+dfsg-1ubuntu0.4 [42.3 kB]
+Get:26 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libasn1-8-heimdal amd64 7.5.0+dfsg-1ubuntu0.4 [175 kB]
+Get:27 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libheimbase1-heimdal amd64 7.5.0+dfsg-1ubuntu0.4 [30.3 kB]
+Get:28 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libhcrypto4-heimdal amd64 7.5.0+dfsg-1ubuntu0.4 [85.9 kB]
+Get:29 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libwind0-heimdal amd64 7.5.0+dfsg-1ubuntu0.4 [48.0 kB]
+Get:30 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libhx509-5-heimdal amd64 7.5.0+dfsg-1ubuntu0.4 [107 kB]
+Get:31 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libkrb5-26-heimdal amd64 7.5.0+dfsg-1ubuntu0.4 [207 kB]
+Get:32 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libheimntlm0-heimdal amd64 7.5.0+dfsg-1ubuntu0.4 [14.8 kB]
+Get:33 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libgssapi3-heimdal amd64 7.5.0+dfsg-1ubuntu0.4 [96.7 kB]
+Get:34 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libsasl2-modules-db amd64 2.1.27~101-g0780600+dfsg-3ubuntu2.4 [15.0 kB]
+Get:35 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libsasl2-2 amd64 2.1.27~101-g0780600+dfsg-3ubuntu2.4 [49.2 kB]
+Get:36 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libldap-common all 2.4.45+dfsg-1ubuntu1.11 [15.8 kB]
+Get:37 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libldap-2.4-2 amd64 2.4.45+dfsg-1ubuntu1.11 [154 kB]
+Get:38 http://archive.ubuntu.com/ubuntu bionic/main amd64 libnghttp2-14 amd64 1.30.0-1ubuntu1 [77.8 kB]
+Get:39 http://archive.ubuntu.com/ubuntu bionic/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-1 [54.2 kB]
+Get:40 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libcurl4 amd64 7.58.0-2ubuntu3.24 [221 kB]
+Get:41 http://archive.ubuntu.com/ubuntu bionic/main amd64 libjsoncpp1 amd64 1.7.4-3 [73.6 kB]
+Get:42 http://archive.ubuntu.com/ubuntu bionic/main amd64 librhash0 amd64 1.3.6-2 [78.1 kB]
+Get:43 http://archive.ubuntu.com/ubuntu bionic/main amd64 libuv1 amd64 1.18.0-3 [64.4 kB]
+Get:44 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 cmake amd64 3.10.2-1ubuntu2.18.04.2 [3152 kB]
+Get:45 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 gcc-7-base amd64 7.5.0-3ubuntu1~18.04 [18.3 kB]
+Get:46 http://archive.ubuntu.com/ubuntu bionic/main amd64 libisl19 amd64 0.19-1 [551 kB]
+Get:47 http://archive.ubuntu.com/ubuntu bionic/main amd64 libmpfr6 amd64 4.0.1-1 [243 kB]
+Get:48 http://archive.ubuntu.com/ubuntu bionic/main amd64 libmpc3 amd64 1.1.0-1 [40.8 kB]
+Get:49 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 cpp-7 amd64 7.5.0-3ubuntu1~18.04 [8591 kB]
+Get:50 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 cpp amd64 4:7.4.0-1ubuntu2.3 [27.7 kB]
+Get:51 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libcc1-0 amd64 8.4.0-1ubuntu1~18.04 [39.4 kB]
+Get:52 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libgomp1 amd64 8.4.0-1ubuntu1~18.04 [76.5 kB]
+Get:53 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libitm1 amd64 8.4.0-1ubuntu1~18.04 [27.9 kB]
+Get:54 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libatomic1 amd64 8.4.0-1ubuntu1~18.04 [9192 B]
+Get:55 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libasan4 amd64 7.5.0-3ubuntu1~18.04 [358 kB]
+Get:56 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 liblsan0 amd64 8.4.0-1ubuntu1~18.04 [133 kB]
+Get:57 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libtsan0 amd64 8.4.0-1ubuntu1~18.04 [288 kB]
+Get:58 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libubsan0 amd64 7.5.0-3ubuntu1~18.04 [126 kB]
+Get:59 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libcilkrts5 amd64 7.5.0-3ubuntu1~18.04 [42.5 kB]
+Get:60 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libmpx2 amd64 8.4.0-1ubuntu1~18.04 [11.6 kB]
+Get:61 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libquadmath0 amd64 8.4.0-1ubuntu1~18.04 [134 kB]
+Get:62 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libgcc-7-dev amd64 7.5.0-3ubuntu1~18.04 [2378 kB]
+Get:63 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 gcc-7 amd64 7.5.0-3ubuntu1~18.04 [9381 kB]
+Get:64 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 gcc amd64 4:7.4.0-1ubuntu2.3 [5184 B]
+Get:65 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libc-dev-bin amd64 2.27-3ubuntu1.6 [71.9 kB]
+Get:66 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 linux-libc-dev amd64 4.15.0-213.224 [983 kB]
+Get:67 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libc6-dev amd64 2.27-3ubuntu1.6 [2587 kB]
+Get:68 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libstdc++-7-dev amd64 7.5.0-3ubuntu1~18.04 [1471 kB]
+Get:69 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 g++-7 amd64 7.5.0-3ubuntu1~18.04 [9697 kB]
+Get:70 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 g++ amd64 4:7.4.0-1ubuntu2.3 [1568 B]
+Get:71 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libsasl2-modules amd64 2.1.27~101-g0780600+dfsg-3ubuntu2.4 [48.9 kB]
+Get:72 http://archive.ubuntu.com/ubuntu bionic/main amd64 make amd64 4.1-9.1ubuntu1 [154 kB]
+Get:73 http://archive.ubuntu.com/ubuntu bionic/main amd64 manpages-dev all 4.15-1 [2217 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 62.0 MB in 6s (10.1 MB/s)
+Selecting previously unselected package multiarch-support.
+(Reading database ... 4050 files and directories currently installed.)
+Preparing to unpack .../multiarch-support_2.27-3ubuntu1.6_amd64.deb ...
+Unpacking multiarch-support (2.27-3ubuntu1.6) ...
+Setting up multiarch-support (2.27-3ubuntu1.6) ...
+Selecting previously unselected package liblzo2-2:amd64.
+(Reading database ... 4053 files and directories currently installed.)
+Preparing to unpack .../00-liblzo2-2_2.08-1.2_amd64.deb ...
+Unpacking liblzo2-2:amd64 (2.08-1.2) ...
+Selecting previously unselected package libssl1.1:amd64.
+Preparing to unpack .../01-libssl1.1_1.1.1-1ubuntu2.1~18.04.23_amd64.deb ...
+Unpacking libssl1.1:amd64 (1.1.1-1ubuntu2.1~18.04.23) ...
+Selecting previously unselected package openssl.
+Preparing to unpack .../02-openssl_1.1.1-1ubuntu2.1~18.04.23_amd64.deb ...
+Unpacking openssl (1.1.1-1ubuntu2.1~18.04.23) ...
+Selecting previously unselected package ca-certificates.
+Preparing to unpack .../03-ca-certificates_20230311ubuntu0.18.04.1_all.deb ...
+Unpacking ca-certificates (20230311ubuntu0.18.04.1) ...
+Selecting previously unselected package libexpat1:amd64.
+Preparing to unpack .../04-libexpat1_2.2.5-3ubuntu0.9_amd64.deb ...
+Unpacking libexpat1:amd64 (2.2.5-3ubuntu0.9) ...
+Selecting previously unselected package libicu60:amd64.
+Preparing to unpack .../05-libicu60_60.2-3ubuntu3.2_amd64.deb ...
+Unpacking libicu60:amd64 (60.2-3ubuntu3.2) ...
+Selecting previously unselected package libsqlite3-0:amd64.
+Preparing to unpack .../06-libsqlite3-0_3.22.0-1ubuntu0.7_amd64.deb ...
+Unpacking libsqlite3-0:amd64 (3.22.0-1ubuntu0.7) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../07-libxml2_2.9.4+dfsg1-6.1ubuntu1.9_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.4+dfsg1-6.1ubuntu1.9) ...
+Selecting previously unselected package krb5-locales.
+Preparing to unpack .../08-krb5-locales_1.16-2ubuntu0.4_all.deb ...
+Unpacking krb5-locales (1.16-2ubuntu0.4) ...
+Selecting previously unselected package libkrb5support0:amd64.
+Preparing to unpack .../09-libkrb5support0_1.16-2ubuntu0.4_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.16-2ubuntu0.4) ...
+Selecting previously unselected package libk5crypto3:amd64.
+Preparing to unpack .../10-libk5crypto3_1.16-2ubuntu0.4_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.16-2ubuntu0.4) ...
+Selecting previously unselected package libkeyutils1:amd64.
+Preparing to unpack .../11-libkeyutils1_1.5.9-9.2ubuntu2.1_amd64.deb ...
+Unpacking libkeyutils1:amd64 (1.5.9-9.2ubuntu2.1) ...
+Selecting previously unselected package libkrb5-3:amd64.
+Preparing to unpack .../12-libkrb5-3_1.16-2ubuntu0.4_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.16-2ubuntu0.4) ...
+Selecting previously unselected package libgssapi-krb5-2:amd64.
+Preparing to unpack .../13-libgssapi-krb5-2_1.16-2ubuntu0.4_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.16-2ubuntu0.4) ...
+Selecting previously unselected package libpsl5:amd64.
+Preparing to unpack .../14-libpsl5_0.19.1-5build1_amd64.deb ...
+Unpacking libpsl5:amd64 (0.19.1-5build1) ...
+Selecting previously unselected package manpages.
+Preparing to unpack .../15-manpages_4.15-1_all.deb ...
+Unpacking manpages (4.15-1) ...
+Selecting previously unselected package publicsuffix.
+Preparing to unpack .../16-publicsuffix_20180223.1310-1_all.deb ...
+Unpacking publicsuffix (20180223.1310-1) ...
+Selecting previously unselected package binutils-common:amd64.
+Preparing to unpack .../17-binutils-common_2.30-21ubuntu1~18.04.9_amd64.deb ...
+Unpacking binutils-common:amd64 (2.30-21ubuntu1~18.04.9) ...
+Selecting previously unselected package libbinutils:amd64.
+Preparing to unpack .../18-libbinutils_2.30-21ubuntu1~18.04.9_amd64.deb ...
+Unpacking libbinutils:amd64 (2.30-21ubuntu1~18.04.9) ...
+Selecting previously unselected package binutils-x86-64-linux-gnu.
+Preparing to unpack .../19-binutils-x86-64-linux-gnu_2.30-21ubuntu1~18.04.9_amd64.deb ...
+Unpacking binutils-x86-64-linux-gnu (2.30-21ubuntu1~18.04.9) ...
+Selecting previously unselected package binutils.
+Preparing to unpack .../20-binutils_2.30-21ubuntu1~18.04.9_amd64.deb ...
+Unpacking binutils (2.30-21ubuntu1~18.04.9) ...
+Selecting previously unselected package cmake-data.
+Preparing to unpack .../21-cmake-data_3.10.2-1ubuntu2.18.04.2_all.deb ...
+Unpacking cmake-data (3.10.2-1ubuntu2.18.04.2) ...
+Selecting previously unselected package libarchive13:amd64.
+Preparing to unpack .../22-libarchive13_3.2.2-3.1ubuntu0.7_amd64.deb ...
+Unpacking libarchive13:amd64 (3.2.2-3.1ubuntu0.7) ...
+Selecting previously unselected package libroken18-heimdal:amd64.
+Preparing to unpack .../23-libroken18-heimdal_7.5.0+dfsg-1ubuntu0.4_amd64.deb ...
+Unpacking libroken18-heimdal:amd64 (7.5.0+dfsg-1ubuntu0.4) ...
+Selecting previously unselected package libasn1-8-heimdal:amd64.
+Preparing to unpack .../24-libasn1-8-heimdal_7.5.0+dfsg-1ubuntu0.4_amd64.deb ...
+Unpacking libasn1-8-heimdal:amd64 (7.5.0+dfsg-1ubuntu0.4) ...
+Selecting previously unselected package libheimbase1-heimdal:amd64.
+Preparing to unpack .../25-libheimbase1-heimdal_7.5.0+dfsg-1ubuntu0.4_amd64.deb ...
+Unpacking libheimbase1-heimdal:amd64 (7.5.0+dfsg-1ubuntu0.4) ...
+Selecting previously unselected package libhcrypto4-heimdal:amd64.
+Preparing to unpack .../26-libhcrypto4-heimdal_7.5.0+dfsg-1ubuntu0.4_amd64.deb ...
+Unpacking libhcrypto4-heimdal:amd64 (7.5.0+dfsg-1ubuntu0.4) ...
+Selecting previously unselected package libwind0-heimdal:amd64.
+Preparing to unpack .../27-libwind0-heimdal_7.5.0+dfsg-1ubuntu0.4_amd64.deb ...
+Unpacking libwind0-heimdal:amd64 (7.5.0+dfsg-1ubuntu0.4) ...
+Selecting previously unselected package libhx509-5-heimdal:amd64.
+Preparing to unpack .../28-libhx509-5-heimdal_7.5.0+dfsg-1ubuntu0.4_amd64.deb ...
+Unpacking libhx509-5-heimdal:amd64 (7.5.0+dfsg-1ubuntu0.4) ...
+Selecting previously unselected package libkrb5-26-heimdal:amd64.
+Preparing to unpack .../29-libkrb5-26-heimdal_7.5.0+dfsg-1ubuntu0.4_amd64.deb ...
+Unpacking libkrb5-26-heimdal:amd64 (7.5.0+dfsg-1ubuntu0.4) ...
+Selecting previously unselected package libheimntlm0-heimdal:amd64.
+Preparing to unpack .../30-libheimntlm0-heimdal_7.5.0+dfsg-1ubuntu0.4_amd64.deb ...
+Unpacking libheimntlm0-heimdal:amd64 (7.5.0+dfsg-1ubuntu0.4) ...
+Selecting previously unselected package libgssapi3-heimdal:amd64.
+Preparing to unpack .../31-libgssapi3-heimdal_7.5.0+dfsg-1ubuntu0.4_amd64.deb ...
+Unpacking libgssapi3-heimdal:amd64 (7.5.0+dfsg-1ubuntu0.4) ...
+Selecting previously unselected package libsasl2-modules-db:amd64.
+Preparing to unpack .../32-libsasl2-modules-db_2.1.27~101-g0780600+dfsg-3ubuntu2.4_amd64.deb ...
+Unpacking libsasl2-modules-db:amd64 (2.1.27~101-g0780600+dfsg-3ubuntu2.4) ...
+Selecting previously unselected package libsasl2-2:amd64.
+Preparing to unpack .../33-libsasl2-2_2.1.27~101-g0780600+dfsg-3ubuntu2.4_amd64.deb ...
+Unpacking libsasl2-2:amd64 (2.1.27~101-g0780600+dfsg-3ubuntu2.4) ...
+Selecting previously unselected package libldap-common.
+Preparing to unpack .../34-libldap-common_2.4.45+dfsg-1ubuntu1.11_all.deb ...
+Unpacking libldap-common (2.4.45+dfsg-1ubuntu1.11) ...
+Selecting previously unselected package libldap-2.4-2:amd64.
+Preparing to unpack .../35-libldap-2.4-2_2.4.45+dfsg-1ubuntu1.11_amd64.deb ...
+Unpacking libldap-2.4-2:amd64 (2.4.45+dfsg-1ubuntu1.11) ...
+Selecting previously unselected package libnghttp2-14:amd64.
+Preparing to unpack .../36-libnghttp2-14_1.30.0-1ubuntu1_amd64.deb ...
+Unpacking libnghttp2-14:amd64 (1.30.0-1ubuntu1) ...
+Selecting previously unselected package librtmp1:amd64.
+Preparing to unpack .../37-librtmp1_2.4+20151223.gitfa8646d.1-1_amd64.deb ...
+Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d.1-1) ...
+Selecting previously unselected package libcurl4:amd64.
+Preparing to unpack .../38-libcurl4_7.58.0-2ubuntu3.24_amd64.deb ...
+Unpacking libcurl4:amd64 (7.58.0-2ubuntu3.24) ...
+Selecting previously unselected package libjsoncpp1:amd64.
+Preparing to unpack .../39-libjsoncpp1_1.7.4-3_amd64.deb ...
+Unpacking libjsoncpp1:amd64 (1.7.4-3) ...
+Selecting previously unselected package librhash0:amd64.
+Preparing to unpack .../40-librhash0_1.3.6-2_amd64.deb ...
+Unpacking librhash0:amd64 (1.3.6-2) ...
+Selecting previously unselected package libuv1:amd64.
+Preparing to unpack .../41-libuv1_1.18.0-3_amd64.deb ...
+Unpacking libuv1:amd64 (1.18.0-3) ...
+Selecting previously unselected package cmake.
+Preparing to unpack .../42-cmake_3.10.2-1ubuntu2.18.04.2_amd64.deb ...
+Unpacking cmake (3.10.2-1ubuntu2.18.04.2) ...
+Selecting previously unselected package gcc-7-base:amd64.
+Preparing to unpack .../43-gcc-7-base_7.5.0-3ubuntu1~18.04_amd64.deb ...
+Unpacking gcc-7-base:amd64 (7.5.0-3ubuntu1~18.04) ...
+Selecting previously unselected package libisl19:amd64.
+Preparing to unpack .../44-libisl19_0.19-1_amd64.deb ...
+Unpacking libisl19:amd64 (0.19-1) ...
+Selecting previously unselected package libmpfr6:amd64.
+Preparing to unpack .../45-libmpfr6_4.0.1-1_amd64.deb ...
+Unpacking libmpfr6:amd64 (4.0.1-1) ...
+Selecting previously unselected package libmpc3:amd64.
+Preparing to unpack .../46-libmpc3_1.1.0-1_amd64.deb ...
+Unpacking libmpc3:amd64 (1.1.0-1) ...
+Selecting previously unselected package cpp-7.
+Preparing to unpack .../47-cpp-7_7.5.0-3ubuntu1~18.04_amd64.deb ...
+Unpacking cpp-7 (7.5.0-3ubuntu1~18.04) ...
+Selecting previously unselected package cpp.
+Preparing to unpack .../48-cpp_4%3a7.4.0-1ubuntu2.3_amd64.deb ...
+Unpacking cpp (4:7.4.0-1ubuntu2.3) ...
+Selecting previously unselected package libcc1-0:amd64.
+Preparing to unpack .../49-libcc1-0_8.4.0-1ubuntu1~18.04_amd64.deb ...
+Unpacking libcc1-0:amd64 (8.4.0-1ubuntu1~18.04) ...
+Selecting previously unselected package libgomp1:amd64.
+Preparing to unpack .../50-libgomp1_8.4.0-1ubuntu1~18.04_amd64.deb ...
+Unpacking libgomp1:amd64 (8.4.0-1ubuntu1~18.04) ...
+Selecting previously unselected package libitm1:amd64.
+Preparing to unpack .../51-libitm1_8.4.0-1ubuntu1~18.04_amd64.deb ...
+Unpacking libitm1:amd64 (8.4.0-1ubuntu1~18.04) ...
+Selecting previously unselected package libatomic1:amd64.
+Preparing to unpack .../52-libatomic1_8.4.0-1ubuntu1~18.04_amd64.deb ...
+Unpacking libatomic1:amd64 (8.4.0-1ubuntu1~18.04) ...
+Selecting previously unselected package libasan4:amd64.
+Preparing to unpack .../53-libasan4_7.5.0-3ubuntu1~18.04_amd64.deb ...
+Unpacking libasan4:amd64 (7.5.0-3ubuntu1~18.04) ...
+Selecting previously unselected package liblsan0:amd64.
+Preparing to unpack .../54-liblsan0_8.4.0-1ubuntu1~18.04_amd64.deb ...
+Unpacking liblsan0:amd64 (8.4.0-1ubuntu1~18.04) ...
+Selecting previously unselected package libtsan0:amd64.
+Preparing to unpack .../55-libtsan0_8.4.0-1ubuntu1~18.04_amd64.deb ...
+Unpacking libtsan0:amd64 (8.4.0-1ubuntu1~18.04) ...
+Selecting previously unselected package libubsan0:amd64.
+Preparing to unpack .../56-libubsan0_7.5.0-3ubuntu1~18.04_amd64.deb ...
+Unpacking libubsan0:amd64 (7.5.0-3ubuntu1~18.04) ...
+Selecting previously unselected package libcilkrts5:amd64.
+Preparing to unpack .../57-libcilkrts5_7.5.0-3ubuntu1~18.04_amd64.deb ...
+Unpacking libcilkrts5:amd64 (7.5.0-3ubuntu1~18.04) ...
+Selecting previously unselected package libmpx2:amd64.
+Preparing to unpack .../58-libmpx2_8.4.0-1ubuntu1~18.04_amd64.deb ...
+Unpacking libmpx2:amd64 (8.4.0-1ubuntu1~18.04) ...
+Selecting previously unselected package libquadmath0:amd64.
+Preparing to unpack .../59-libquadmath0_8.4.0-1ubuntu1~18.04_amd64.deb ...
+Unpacking libquadmath0:amd64 (8.4.0-1ubuntu1~18.04) ...
+Selecting previously unselected package libgcc-7-dev:amd64.
+Preparing to unpack .../60-libgcc-7-dev_7.5.0-3ubuntu1~18.04_amd64.deb ...
+Unpacking libgcc-7-dev:amd64 (7.5.0-3ubuntu1~18.04) ...
+Selecting previously unselected package gcc-7.
+Preparing to unpack .../61-gcc-7_7.5.0-3ubuntu1~18.04_amd64.deb ...
+Unpacking gcc-7 (7.5.0-3ubuntu1~18.04) ...
+Selecting previously unselected package gcc.
+Preparing to unpack .../62-gcc_4%3a7.4.0-1ubuntu2.3_amd64.deb ...
+Unpacking gcc (4:7.4.0-1ubuntu2.3) ...
+Selecting previously unselected package libc-dev-bin.
+Preparing to unpack .../63-libc-dev-bin_2.27-3ubuntu1.6_amd64.deb ...
+Unpacking libc-dev-bin (2.27-3ubuntu1.6) ...
+Selecting previously unselected package linux-libc-dev:amd64.
+Preparing to unpack .../64-linux-libc-dev_4.15.0-213.224_amd64.deb ...
+Unpacking linux-libc-dev:amd64 (4.15.0-213.224) ...
+Selecting previously unselected package libc6-dev:amd64.
+Preparing to unpack .../65-libc6-dev_2.27-3ubuntu1.6_amd64.deb ...
+Unpacking libc6-dev:amd64 (2.27-3ubuntu1.6) ...
+Selecting previously unselected package libstdc++-7-dev:amd64.
+Preparing to unpack .../66-libstdc++-7-dev_7.5.0-3ubuntu1~18.04_amd64.deb ...
+Unpacking libstdc++-7-dev:amd64 (7.5.0-3ubuntu1~18.04) ...
+Selecting previously unselected package g++-7.
+Preparing to unpack .../67-g++-7_7.5.0-3ubuntu1~18.04_amd64.deb ...
+Unpacking g++-7 (7.5.0-3ubuntu1~18.04) ...
+Selecting previously unselected package g++.
+Preparing to unpack .../68-g++_4%3a7.4.0-1ubuntu2.3_amd64.deb ...
+Unpacking g++ (4:7.4.0-1ubuntu2.3) ...
+Selecting previously unselected package libsasl2-modules:amd64.
+Preparing to unpack .../69-libsasl2-modules_2.1.27~101-g0780600+dfsg-3ubuntu2.4_amd64.deb ...
+Unpacking libsasl2-modules:amd64 (2.1.27~101-g0780600+dfsg-3ubuntu2.4) ...
+Selecting previously unselected package make.
+Preparing to unpack .../70-make_4.1-9.1ubuntu1_amd64.deb ...
+Unpacking make (4.1-9.1ubuntu1) ...
+Selecting previously unselected package manpages-dev.
+Preparing to unpack .../71-manpages-dev_4.15-1_all.deb ...
+Unpacking manpages-dev (4.15-1) ...
+Setting up libquadmath0:amd64 (8.4.0-1ubuntu1~18.04) ...
+Setting up libgomp1:amd64 (8.4.0-1ubuntu1~18.04) ...
+Setting up libatomic1:amd64 (8.4.0-1ubuntu1~18.04) ...
+Setting up manpages (4.15-1) ...
+Setting up libexpat1:amd64 (2.2.5-3ubuntu0.9) ...
+Setting up libicu60:amd64 (60.2-3ubuntu3.2) ...
+Setting up libcc1-0:amd64 (8.4.0-1ubuntu1~18.04) ...
+Setting up make (4.1-9.1ubuntu1) ...
+Setting up libnghttp2-14:amd64 (1.30.0-1ubuntu1) ...
+Setting up libldap-common (2.4.45+dfsg-1ubuntu1.11) ...
+Setting up libuv1:amd64 (1.18.0-3) ...
+Setting up libpsl5:amd64 (0.19.1-5build1) ...
+Setting up libtsan0:amd64 (8.4.0-1ubuntu1~18.04) ...
+Setting up libsasl2-modules-db:amd64 (2.1.27~101-g0780600+dfsg-3ubuntu2.4) ...
+Setting up linux-libc-dev:amd64 (4.15.0-213.224) ...
+Setting up libmpfr6:amd64 (4.0.1-1) ...
+Setting up libsasl2-2:amd64 (2.1.27~101-g0780600+dfsg-3ubuntu2.4) ...
+Setting up cmake-data (3.10.2-1ubuntu2.18.04.2) ...
+Setting up libroken18-heimdal:amd64 (7.5.0+dfsg-1ubuntu0.4) ...
+Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d.1-1) ...
+Setting up libkrb5support0:amd64 (1.16-2ubuntu0.4) ...
+Setting up libxml2:amd64 (2.9.4+dfsg1-6.1ubuntu1.9) ...
+Setting up librhash0:amd64 (1.3.6-2) ...
+Setting up liblsan0:amd64 (8.4.0-1ubuntu1~18.04) ...
+Setting up gcc-7-base:amd64 (7.5.0-3ubuntu1~18.04) ...
+Setting up binutils-common:amd64 (2.30-21ubuntu1~18.04.9) ...
+Setting up libmpx2:amd64 (8.4.0-1ubuntu1~18.04) ...
+Setting up krb5-locales (1.16-2ubuntu0.4) ...
+Setting up publicsuffix (20180223.1310-1) ...
+Setting up libssl1.1:amd64 (1.1.1-1ubuntu2.1~18.04.23) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.26.1 /usr/local/share/perl/5.26.1 /usr/lib/x86_64-linux-gnu/perl5/5.26 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.26 /usr/share/perl/5.26 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Setting up libheimbase1-heimdal:amd64 (7.5.0+dfsg-1ubuntu0.4) ...
+Setting up openssl (1.1.1-1ubuntu2.1~18.04.23) ...
+Setting up libsqlite3-0:amd64 (3.22.0-1ubuntu0.7) ...
+Setting up libmpc3:amd64 (1.1.0-1) ...
+Setting up libc-dev-bin (2.27-3ubuntu1.6) ...
+Setting up libkeyutils1:amd64 (1.5.9-9.2ubuntu2.1) ...
+Setting up libsasl2-modules:amd64 (2.1.27~101-g0780600+dfsg-3ubuntu2.4) ...
+Setting up ca-certificates (20230311ubuntu0.18.04.1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.26.1 /usr/local/share/perl/5.26.1 /usr/lib/x86_64-linux-gnu/perl5/5.26 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.26 /usr/share/perl/5.26 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Updating certificates in /etc/ssl/certs...
+137 added, 0 removed; done.
+Setting up manpages-dev (4.15-1) ...
+Setting up libc6-dev:amd64 (2.27-3ubuntu1.6) ...
+Setting up libitm1:amd64 (8.4.0-1ubuntu1~18.04) ...
+Setting up liblzo2-2:amd64 (2.08-1.2) ...
+Setting up libisl19:amd64 (0.19-1) ...
+Setting up libjsoncpp1:amd64 (1.7.4-3) ...
+Setting up libk5crypto3:amd64 (1.16-2ubuntu0.4) ...
+Setting up libwind0-heimdal:amd64 (7.5.0+dfsg-1ubuntu0.4) ...
+Setting up libasan4:amd64 (7.5.0-3ubuntu1~18.04) ...
+Setting up libbinutils:amd64 (2.30-21ubuntu1~18.04.9) ...
+Setting up libarchive13:amd64 (3.2.2-3.1ubuntu0.7) ...
+Setting up libcilkrts5:amd64 (7.5.0-3ubuntu1~18.04) ...
+Setting up libasn1-8-heimdal:amd64 (7.5.0+dfsg-1ubuntu0.4) ...
+Setting up libubsan0:amd64 (7.5.0-3ubuntu1~18.04) ...
+Setting up libhcrypto4-heimdal:amd64 (7.5.0+dfsg-1ubuntu0.4) ...
+Setting up libhx509-5-heimdal:amd64 (7.5.0+dfsg-1ubuntu0.4) ...
+Setting up libgcc-7-dev:amd64 (7.5.0-3ubuntu1~18.04) ...
+Setting up cpp-7 (7.5.0-3ubuntu1~18.04) ...
+Setting up libstdc++-7-dev:amd64 (7.5.0-3ubuntu1~18.04) ...
+Setting up libkrb5-3:amd64 (1.16-2ubuntu0.4) ...
+Setting up libkrb5-26-heimdal:amd64 (7.5.0+dfsg-1ubuntu0.4) ...
+Setting up libheimntlm0-heimdal:amd64 (7.5.0+dfsg-1ubuntu0.4) ...
+Setting up binutils-x86-64-linux-gnu (2.30-21ubuntu1~18.04.9) ...
+Setting up cpp (4:7.4.0-1ubuntu2.3) ...
+Setting up libgssapi-krb5-2:amd64 (1.16-2ubuntu0.4) ...
+Setting up binutils (2.30-21ubuntu1~18.04.9) ...
+Setting up libgssapi3-heimdal:amd64 (7.5.0+dfsg-1ubuntu0.4) ...
+Setting up gcc-7 (7.5.0-3ubuntu1~18.04) ...
+Setting up g++-7 (7.5.0-3ubuntu1~18.04) ...
+Setting up gcc (4:7.4.0-1ubuntu2.3) ...
+Setting up libldap-2.4-2:amd64 (2.4.45+dfsg-1ubuntu1.11) ...
+Setting up g++ (4:7.4.0-1ubuntu2.3) ...
+update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/c++.1.gz because associated file /usr/share/man/man1/g++.1.gz (of link group c++) doesn't exist
+Setting up libcurl4:amd64 (7.58.0-2ubuntu3.24) ...
+Setting up cmake (3.10.2-1ubuntu2.18.04.2) ...
+Processing triggers for libc-bin (2.27-3ubuntu1.6) ...
+Processing triggers for ca-certificates (20230311ubuntu0.18.04.1) ...
+Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
+ ---> Removed intermediate container 05e0fa4abf52
+ ---> 7a490f5aee89
+Step 4/9 : COPY . print/
+ ---> 02a97e39d642
+Step 5/9 : WORKDIR print
+ ---> Running in b46be2aa2fd1
+ ---> Removed intermediate container b46be2aa2fd1
+ ---> ef89c9f57b9f
+Step 6/9 : ENV LOG_PATH /home/logs.txt
+ ---> Running in c65c4b037ac9
+ ---> Removed intermediate container c65c4b037ac9
+ ---> 6191f1bf140e
+Step 7/9 : VOLUME /home/logs
+ ---> Running in a40a7869b20e
+ ---> Removed intermediate container a40a7869b20e
+ ---> 68adce24a876
+Step 8/9 : WORKDIR _install/bin
+ ---> Running in 6cf1c39d9dc6
+ ---> Removed intermediate container 6cf1c39d9dc6
+ ---> e213a09b7a32
+Step 9/9 : ENTRYPOINT ./demo
+ ---> Running in 1cf5d8e2efa4
+ ---> Removed intermediate container 1cf5d8e2efa4
+ ---> 332e236eb40c
+Successfully built 332e236eb40c
+Successfully tagged logger:latest
+
+$ docker images
+REPOSITORY   TAG       IMAGE ID       CREATED          SIZE
+logger       latest    332e236eb40c   42 seconds ago   386MB
+ubuntu       18.04     f9a80a55f492   24 months ago    63.2MB
+
+
+$docker run -it -v "$(pwd)/logs/:/home/logs/" logger text1 text2 text3
+
+
+$docker inspect logger 
+[
+    {
+        "Id": "sha256:bfc2e0bb536f1b4085364afc0f64758bb1dd473aaf9064d6aa5408f4ff27dce2",
+        "RepoTags": [
+            "logger:latest"
+        ],
+        "RepoDigests": [],
+        "Parent": "sha256:b20abce02869d2a5d5c72b743b7e7fbed5468c799bc1c380bc1c649020b41f1f",
+        "Comment": "",
+        "Created": "2025-05-28T22:17:01.967071438Z",
+        "DockerVersion": "26.1.3",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LOG_PATH=/home/logs.txt"
+            ],
+            "Cmd": null,
+            "Image": "sha256:b20abce02869d2a5d5c72b743b7e7fbed5468c799bc1c380bc1c649020b41f1f",
+            "Volumes": {
+                "/home/logs": {}
+            },
+            "WorkingDir": "/print/_install/bin",
+            "Entrypoint": [
+                "/bin/sh",
+                "-c",
+                "./demo"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "18.04"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 386052625,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/9ae9452ed658461b9c5ecb14f48613903d10b08493c3be3ea2cc1e3c8b6c2959/diff:/var/lib/docker/overlay2/84eb50ff0df67ff812043478c4e520f0c4366cc0a8faf87c18a7315db5ffd24c/diff:/var/lib/docker/overlay2/5ef567298c2e736cb1849708d4faca13b30aeb8810c2e333267106366d843ab4/diff:/var/lib/docker/overlay2/3de4c296ff6e94454727b4fab09a1fbd28e47fc5776f9b8c9fac87be3374bca0/diff",
+                "MergedDir": "/var/lib/docker/overlay2/2b37895aba56d008017034e9f706d67f47a0b56b75188b42f992b0be06b54e22/merged",
+                "UpperDir": "/var/lib/docker/overlay2/2b37895aba56d008017034e9f706d67f47a0b56b75188b42f992b0be06b54e22/diff",
+                "WorkDir": "/var/lib/docker/overlay2/2b37895aba56d008017034e9f706d67f47a0b56b75188b42f992b0be06b54e22/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:548a79621a426b4eb077c926eabac5a8620c454fb230640253e1b44dc7dd7562",
+                "sha256:a55b090044129ea960a4cd3ede52e60e748b420766ca815eeb6ff110eaf76fed",
+                "sha256:a55e3927dfa68fad3a979c820c4cf7ad6c22687866edb9f3e6da7d81b40b8dcd",
+                "sha256:04a3e9517a33c695ab62c66f220bdf002c81ede5a28d3cab51667b589165cbc6",
+                "sha256:327fb32187c65f9e652525edc7210265f390a789c60ca7f4614be96639a114f4"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2025-05-29T01:17:02.061898465+03:00"
+        }
+    }
 ]
 
-[/klich26/workspace/projects/lab07]> "which" "cmake"
+$ gsed -i 's/lab07/lab08/g' README.md
 
-/usr/bin/cmake
-Execute command: [
-  `cmake`
-  `--version`
-]
+$ vim .travis.yml
+/lang<CR>o
+services:
+- docker<ESC>
+jVGdo
+script:
+- docker build -t logger .<ESC>
+:wq
 
-[/klich26/workspace/projects/lab07]> "cmake" "--version"
-
-cmake version 3.28.3
-
-CMake suite maintained and supported by Kitware (kitware.com/cmake).
-Execute command: [
-  `cmake`
-  `--build`
-  `/klich26/workspace/projects/lab07/_builds/default`
-  `--`
-]
-
-[/klich26/workspace/projects/lab07]> "cmake" "--build" "/klich26/workspace/projects/lab07/_builds/default" "--"
-
-[ 50%] Built target print
-[100%] Built target demo
-Run tests
-Execute command: [
-  `ctest`
-]
-
-[/klich26/workspace/projects/lab07/_builds/default]> "ctest"
-
-*********************************
-No test configuration file found!
-*********************************
-Usage
-
-  ctest [options]
-
--
-Log saved: /klich26/workspace/projects/lab07/_logs/polly/default/log.txt
--
-Generate: 0:00:00.000301s
-Build: 0:00:01.220028s
-Test: 0:00:00.026680s
--
-Total: 0:00:01.247316s
--
-SUCCESS
-
-
-
-$ tools/polly/bin/polly.py --install
-Python version: 3.12
-Build dir: /klich26/workspace/projects/lab07/_builds/default
-Execute command: [
-  `which`
-  `cmake`
-]
-
-[/klich26/workspace/projects/lab07]> "which" "cmake"
-
-/usr/bin/cmake
-Execute command: [
-  `cmake`
-  `--version`
-]
-
-[/klich26/workspace/projects/lab07]> "cmake" "--version"
-
-cmake version 3.28.3
-
-CMake suite maintained and supported by Kitware (kitware.com/cmake).
-
-== WARNING ==
-
-Looks like cmake arguments changed. You have two options to fix it:
-  * Remove build directory completely by adding '--clear' (works 100%)
-  * Run configure again by adding '--reconfig' (you must understand how CMake cache variables works/updated)
-
-- "cmake" "-H." "-B/klich26/workspace/projects/lab07/_builds/default" "-DCMAKE_TOOLCHAIN_FILE=/klich26/workspace/projects/lab07/tools/polly/default.cmake"
-+ "cmake" "-H." "-B/klich26/workspace/projects/lab07/_builds/default" "-DCMAKE_TOOLCHAIN_FILE=/klich26/workspace/projects/lab07/tools/polly/default.cmake" "-DCMAKE_INSTALL_PREFIX=/klich26/workspace/projects/lab07/_install/default"
-?                                                                                                                                                         ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-
-
-
-
-$ tools/polly/bin/polly.py --toolchain clang-cxx14
-Python version: 3.12
-Build dir: /klich26/workspace/projects/lab07/_builds/clang-cxx14
-Execute command: [
-  `which`
-  `cmake`
-]
-
-[/klich26/workspace/projects/lab07]> "which" "cmake"
-
-/usr/bin/cmake
-Execute command: [
-  `cmake`
-  `--version`
-]
-
-[/klich26/workspace/projects/lab07]> "cmake" "--version"
-
-cmake version 3.28.3
-
-CMake suite maintained and supported by Kitware (kitware.com/cmake).
-Execute command: [
-  `cmake`
-  `-H.`
-  `-B/klich26/workspace/projects/lab07/_builds/clang-cxx14`
-  `-GUnix Makefiles`
-  `-DCMAKE_TOOLCHAIN_FILE=/klich26/workspace/projects/lab07/tools/polly/clang-cxx14.cmake`
-]
-
-[/klich26/workspace/projects/lab07]> "cmake" "-H." "-B/klich26/workspace/projects/lab07/_builds/clang-cxx14" "-GUnix Makefiles" "-DCMAKE_TOOLCHAIN_FILE=/klich26/workspace/projects/lab07/tools/polly/clang-cxx14.cmake"
-
-CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-
-
--- [polly] Used toolchain: clang / c++14 support
--- The C compiler identification is Clang 18.1.3
--- The CXX compiler identification is Clang 18.1.3
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: /usr/bin/clang - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /usr/bin/clang++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- [hunter] Calculating Toolchain-SHA1
--- [hunter] Calculating Config-SHA1
--- [hunter] HUNTER_ROOT: /root/projects/hunter
--- [hunter] [ Hunter-ID: xxxxxxx | Toolchain-ID: 71bad34 | Config-ID: cf272be ]
--- [hunter] GTEST_ROOT: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Install (ver.: 1.15.2)
--- [hunter] Building GTest
-loading initial cache file /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/cache.cmake
-loading initial cache file /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/args.cmake
--- [polly] Used toolchain: clang / c++14 support
--- The C compiler identification is Clang 18.1.3
--- The CXX compiler identification is Clang 18.1.3
--- Check for working C compiler: /usr/bin/clang - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Check for working CXX compiler: /usr/bin/clang++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Configuring done (0.8s)
--- Generating done (0.0s)
--- Build files have been written to: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Build
-[  6%] Creating directories for 'GTest-Release'
-[ 12%] Performing download step (download, verify and extract) for 'GTest-Release'
--- verifying file...
-       file='/root/projects/hunter/_Base/Download/GTest/1.15.2/568d58e/v1.15.2.tar.gz'
--- File already exists and hash match (skip download):
-  file='/root/projects/hunter/_Base/Download/GTest/1.15.2/568d58e/v1.15.2.tar.gz'
-  SHA1='568d58e26bd4e838449ca7ab8ebc152b3cbd210d'
--- extracting...
-     src='/root/projects/hunter/_Base/Download/GTest/1.15.2/568d58e/v1.15.2.tar.gz'
-     dst='/root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Source'
--- extracting... [tar xfz]
--- extracting... [analysis]
--- extracting... [rename]
--- extracting... [clean up]
--- extracting... done
-[ 18%] No update step for 'GTest-Release'
-[ 25%] No patch step for 'GTest-Release'
-[ 31%] Performing configure step for 'GTest-Release'
-loading initial cache file /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/cache.cmake
-loading initial cache file /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/args.cmake
--- [polly] Used toolchain: clang / c++14 support
--- The C compiler identification is Clang 18.1.3
--- The CXX compiler identification is Clang 18.1.3
--- Check for working C compiler: /usr/bin/clang - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Check for working CXX compiler: /usr/bin/clang++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
--- Found Threads: TRUE
--- Configuring done (1.0s)
--- Generating done (0.0s)
--- Build files have been written to: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build
-[ 37%] Performing build step for 'GTest-Release'
-[ 12%] Building CXX object googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
-[ 25%] Linking CXX static library ../lib/libgtest.a
-[ 25%] Built target gtest
-[ 37%] Building CXX object googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
-[ 50%] Building CXX object googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
-[ 62%] Linking CXX static library ../lib/libgtest_main.a
-[ 62%] Built target gtest_main
-[ 75%] Linking CXX static library ../lib/libgmock.a
-[ 75%] Built target gmock
-[ 87%] Building CXX object googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
-[100%] Linking CXX static library ../lib/libgmock_main.a
-[100%] Built target gmock_main
-[ 43%] Performing install step for 'GTest-Release'
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/gmock-spec-builders.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/internal
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/internal/gmock-internal-utils.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/internal/gmock-pp.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/internal/gmock-port.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/internal/custom
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/internal/custom/gmock-generated-actions.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/internal/custom/gmock-matchers.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/internal/custom/README.md
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/internal/custom/gmock-port.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/gmock-actions.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/gmock-more-matchers.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/gmock-cardinalities.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/gmock-matchers.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/gmock-nice-strict.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/gmock-function-mocker.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/gmock-more-actions.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/gmock.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/lib/libgmock.a
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/lib/libgmock_main.a
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/lib/pkgconfig/gmock.pc
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/lib/pkgconfig/gmock_main.pc
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/lib/cmake/GTest/GTestTargets.cmake
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/lib/cmake/GTest/GTestTargets-release.cmake
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/lib/cmake/GTest/GTestConfigVersion.cmake
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/lib/cmake/GTest/GTestConfig.cmake
--- Up-to-date: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/gtest-spi.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/gtest.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/internal
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/internal/gtest-port.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/internal/gtest-death-test-internal.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/internal/gtest-string.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/internal/gtest-port-arch.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/internal/gtest-filepath.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/internal/gtest-internal.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/internal/gtest-param-util.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/internal/gtest-type-util.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/internal/custom
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/internal/custom/gtest.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/internal/custom/gtest-port.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/internal/custom/gtest-printers.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/internal/custom/README.md
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/gtest-test-part.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/gtest-typed-test.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/gtest-printers.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/gtest-matchers.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/gtest_pred_impl.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/gtest-message.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/gtest_prod.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/gtest-death-test.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/gtest-assertion-result.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/gtest-param-test.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/lib/libgtest.a
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/lib/libgtest_main.a
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/lib/pkgconfig/gtest.pc
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/lib/pkgconfig/gtest_main.pc
-loading initial cache file /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/args.cmake
-[ 50%] Completed 'GTest-Release'
-[ 50%] Built target GTest-Release
-[ 56%] Creating directories for 'GTest-Debug'
-[ 62%] Performing download step (download, verify and extract) for 'GTest-Debug'
--- verifying file...
-       file='/root/projects/hunter/_Base/Download/GTest/1.15.2/568d58e/v1.15.2.tar.gz'
--- File already exists and hash match (skip download):
-  file='/root/projects/hunter/_Base/Download/GTest/1.15.2/568d58e/v1.15.2.tar.gz'
-  SHA1='568d58e26bd4e838449ca7ab8ebc152b3cbd210d'
--- extracting...
-     src='/root/projects/hunter/_Base/Download/GTest/1.15.2/568d58e/v1.15.2.tar.gz'
-     dst='/root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Source'
--- extracting... [tar xfz]
--- extracting... [analysis]
--- extracting... [rename]
--- extracting... [clean up]
--- extracting... done
-[ 68%] No update step for 'GTest-Debug'
-[ 75%] No patch step for 'GTest-Debug'
-[ 81%] Performing configure step for 'GTest-Debug'
-loading initial cache file /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/cache.cmake
-loading initial cache file /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/args.cmake
--- [polly] Used toolchain: clang / c++14 support
--- The C compiler identification is Clang 18.1.3
--- The CXX compiler identification is Clang 18.1.3
--- Check for working C compiler: /usr/bin/clang - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Check for working CXX compiler: /usr/bin/clang++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
--- Found Threads: TRUE
--- Configuring done (0.4s)
--- Generating done (0.0s)
--- Build files have been written to: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build
-[ 87%] Performing build step for 'GTest-Debug'
-[ 12%] Building CXX object googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
-[ 25%] Linking CXX static library ../lib/libgtestd.a
-[ 25%] Built target gtest
-[ 37%] Building CXX object googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
-[ 50%] Building CXX object googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
-[ 62%] Linking CXX static library ../lib/libgtest_maind.a
-[ 62%] Built target gtest_main
-[ 75%] Linking CXX static library ../lib/libgmockd.a
-[ 75%] Built target gmock
-[ 87%] Building CXX object googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
-[100%] Linking CXX static library ../lib/libgmock_maind.a
-[100%] Built target gmock_main
-[ 93%] Performing install step for 'GTest-Debug'
--- Up-to-date: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include
--- Up-to-date: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/gmock-spec-builders.h
--- Up-to-date: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/internal
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/internal/gmock-internal-utils.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/internal/gmock-pp.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/internal/gmock-port.h
--- Up-to-date: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/internal/custom
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/internal/custom/gmock-generated-actions.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/internal/custom/gmock-matchers.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/internal/custom/README.md
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/internal/custom/gmock-port.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/gmock-actions.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/gmock-more-matchers.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/gmock-cardinalities.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/gmock-matchers.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/gmock-nice-strict.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/gmock-function-mocker.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/gmock-more-actions.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gmock/gmock.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/lib/libgmockd.a
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/lib/libgmock_maind.a
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/lib/pkgconfig/gmock.pc
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/lib/pkgconfig/gmock_main.pc
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/lib/cmake/GTest/GTestTargets.cmake
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/lib/cmake/GTest/GTestTargets-debug.cmake
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/lib/cmake/GTest/GTestConfigVersion.cmake
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/lib/cmake/GTest/GTestConfig.cmake
--- Up-to-date: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include
--- Up-to-date: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/gtest-spi.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/gtest.h
--- Up-to-date: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/internal
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/internal/gtest-port.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/internal/gtest-death-test-internal.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/internal/gtest-string.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/internal/gtest-port-arch.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/internal/gtest-filepath.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/internal/gtest-internal.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/internal/gtest-param-util.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/internal/gtest-type-util.h
--- Up-to-date: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/internal/custom
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/internal/custom/gtest.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/internal/custom/gtest-port.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/internal/custom/gtest-printers.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/internal/custom/README.md
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/gtest-test-part.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/gtest-typed-test.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/gtest-printers.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/gtest-matchers.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/gtest_pred_impl.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/gtest-message.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/gtest_prod.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/gtest-death-test.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/gtest-assertion-result.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/include/gtest/gtest-param-test.h
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/lib/libgtestd.a
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/lib/libgtest_maind.a
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/lib/pkgconfig/gtest.pc
--- Installing: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/Install/lib/pkgconfig/gtest_main.pc
-loading initial cache file /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest/args.cmake
-[100%] Completed 'GTest-Debug'
-[100%] Built target GTest-Debug
--- [hunter] Build step successful (dir: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Build/GTest)
--- [hunter] Cache saved: /root/projects/hunter/_Base/Cache/raw/ecacb2f27821c12dcfb82a692c5c8c4669cf2dd5.tar.bz2
--- Found GTest: /root/projects/hunter/_Base/xxxxxxx/71bad34/cf272be/Install/lib/cmake/GTest/GTestConfig.cmake (found version "1.15.2")
--- Configuring done (27.8s)
--- Generating done (0.0s)
--- Build files have been written to: /klich26/workspace/projects/lab07/_builds/clang-cxx14
-Execute command: [
-  `cmake`
-  `--build`
-  `/klich26/workspace/projects/lab07/_builds/clang-cxx14`
-  `--`
-]
-
-[/klich26/workspace/projects/lab07]> "cmake" "--build" "/klich26/workspace/projects/lab07/_builds/clang-cxx14" "--"
-
-[ 25%] Building CXX object CMakeFiles/print.dir/sources/print.cpp.o
-[ 50%] Linking CXX static library libprint.a
-[ 50%] Built target print
-[ 75%] Building CXX object CMakeFiles/demo.dir/demo/main.cpp.o
-[100%] Linking CXX executable demo
-[100%] Built target demo
--
-Log saved: /klich26/workspace/projects/lab07/_logs/polly/clang-cxx14/log.txt
--
-Generate: 0:00:28.832721s
-Build: 0:00:02.046989s
--
-Total: 0:00:30.880053s
--
-SUCCESS
-
+$ git add Dockerfile
+$ git add .travis.yml
+$ git commit -m"adding Dockerfile"
+$ git push origin main
